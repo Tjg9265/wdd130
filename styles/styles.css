@@ -19,30 +19,6 @@ main img{
 }
 p{
     padding: 0;
-<<<<<<< HEAD
-=======
-}
-main{
-    max-width: 840px;
-    margin: 0 auto;
-}
-aside{
-    width: 300px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-    color: #333;
-}
-aside img { 
-    width: 200px;
-    height: auto;
-}
-footer{
-    margin-top: 30px;
-    border-top: 1px solid #ccc;
-    text-align: center;
->>>>>>> 38c8d00f2b07dc5a6b43315b3efc73fb28842cb5
 }
 main{
     max-width: 840px;
