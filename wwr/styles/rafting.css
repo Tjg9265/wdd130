@@ -92,7 +92,7 @@ section img {
     margin:8px;
 }
 
-section: last-of-type {
+section last-of-type {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
