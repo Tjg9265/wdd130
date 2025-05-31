@@ -73,6 +73,42 @@ nav, p, section, article {
     margin-left: 10px;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+footer .socialmedia{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin: 8px 16px;
+    align-items: center;
+}
+
+footer .socialmedia a img{
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
 .hero {
     position: relative;
     margin-bottom: 40px;
@@ -96,4 +132,20 @@ section:last-of-type {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+}
+
+section:last-of-type figure img {
+    margin:8px;
+    text-align: center;
+}
+
+section:last-of-type figure img {
+    max-width: 200px;
+    height: auto;
+}
+
+section:last-of-type figure figcaption {
+    font-size: 0.9rem;
+    margin-top: 4px;
 }
