@@ -32,6 +32,8 @@ footer {
 
 main {
     padding-top: 20px;
+    display: grid;
+    gap: 1.5rem;
 }
 
 h1, h2 {
@@ -42,6 +44,7 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+    max-width: 800px;
 }
 
 .socialmedia a {
@@ -54,7 +57,7 @@ nav, p, section, article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.85;
     background-color: var(--accent1-color);
     color: white;
 }
@@ -75,14 +78,34 @@ nav, p, section, article {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 150px 1fr auto;
     align-items: center;
     gap: 1rem;
 }
 
 header img {
     width: 120px;
-    height: auto;
+    height: 80px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    justify-self: center;
+}
+
+nav {
+    justify-self: end;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    padding:8px 12px;
+}
+
+nav a:hover { 
+    color: var(--secondary-color);
 }
 
 header nav {
