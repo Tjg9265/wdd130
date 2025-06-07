@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="author" content="Thomas Garcia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact TJ's Rafting with questions about trips, reservations or feedback. We'er here to help!">
+    <title>Contact Us | TJ's Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rye&family=Ovo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/rafting-banner.jpg" alt="TJ's Rafting Logo">
+        <h1>TJ's Rafting</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 929 N 840 E St, Orem, UT 84097</p>
+            <p><strong>Phone:</strong> (555)123-4567</p>
+            <p><strong>Email:</strong> info@tjsrafting.com</p>
+            <h3>Our Location</h3>
+            <section class="map"></section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.2641639446088!2d-111.67853232360176!3d40.314294461867014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d8552399d6837%3A0x4cb21feb2a46111a!2s929%20N%20840%20E%2C%20Orem%2C%20UT%2084097!5e0!3m2!1sen!2sus!4v1749312904248!5m2!1sen!2sus"
+                    width="400"
+                    height="300"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.jpg" alt="Emily - Guide">
+                <figcaption>Emily - Senior River Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Jake - Safety Officer">
+                <figcaption>Jake - Safety Officer</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Sara - Customer Support">
+                <figcaption>Sara - Customer Support</figcaption>
+            </figure>
+        </section>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Purpose of Message:</p>
+                <label><input type="radio" name="purpose" value="general"> General Inquiry</label><br>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 TJ's Rafting | Thomas Garcia</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://twitter.com"><img src="images/x-twitter.svg" alt="Twitter"></a>
+        </nav>
+        <p><a href="wireframe.pdf" target="_blank">View Contact Page Wireframe</a></p>
+    </footer>
+</body>
+</html>
