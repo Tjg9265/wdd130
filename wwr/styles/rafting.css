@@ -122,13 +122,16 @@ header h1 {
 }
 
 nav {
-    justify-self: end;
+    justify-self: flex-end;
     display: flex;
     gap: 1rem;
+    list-style: none;
 }
 
 nav a {
-    padding:8px 12px;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 8px 12px;
 }
 
 nav a:hover { 
@@ -237,4 +240,18 @@ form button {
 }
 form button:hover {
     background-color: var(--primary-color);
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: start;
+}
+
+.trips-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
