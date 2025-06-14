@@ -211,8 +211,8 @@ footer .socialmedia a img{
     color: var(--accent2-color);
     height: 400px;
     overflow: hidden;
-    width: 100;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -346,4 +346,11 @@ footer .socialmedia a img:hover {
 
 .hero img {
   outline: 2px solid blue;  /* shows image boundaries */
+}
+
+.hero img {
+  max-width: 100% !important; /* override the 200px limit */
+  width: 100%;                /* make it fill its container */
+  margin: 0;                  /* remove margins */
+  display: block;             /* remove inline spacing issues */
 }
