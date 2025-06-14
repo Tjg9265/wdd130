@@ -211,13 +211,18 @@ footer .socialmedia a img{
     color: var(--accent2-color);
     height: 400px;
     overflow: hidden;
+    width: 100;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero img {
+    float: none;
     width: 100%;
     display: block;
     height: auto;
     object-fit: cover;
+    margin: 0 auto;
 }
 
 /*Style for rafting images */
@@ -333,4 +338,12 @@ footer .socialmedia a img:hover {
     height: 100%;
     background-color: rgba(87, 68, 53, 0.4); /* derived from --accent1-color with transparency */
     z-index: 1;
+}
+
+.hero {
+  outline: 2px solid red;   /* shows hero container boundaries */
+}
+
+.hero img {
+  outline: 2px solid blue;  /* shows image boundaries */
 }
