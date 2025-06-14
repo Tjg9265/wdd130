@@ -27,7 +27,13 @@ header, main, footer {
 
 footer {
     text-align: center;
-    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between; /* text left, icons right */
+    align-items: center;
+    padding: 20px;
+    background-color: var(--accent2-color); /* #D5DFE5 - footer background */
+    color: var(--primary-color); /* #567568 - footer text */
+    border-top: 4px solid var(--accent1-color); /* #7D523C - visual divider */
 }
 
 main {
@@ -42,6 +48,8 @@ main {
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
 
 .call-to-action,
@@ -87,6 +95,7 @@ h1, h2 {
     opacity: 0.85;
     background-color: var(--accent1-color);
     color: white;
+    z-index: 2;
 }
 
 .hero article {
@@ -95,6 +104,7 @@ h1, h2 {
     left: 20px;
     background: rgba(255,255,255,0.8);
     padding: 10px;
+    z-index: 2;
 }
 
 .hero article img {
@@ -105,17 +115,22 @@ h1, h2 {
 
 header {
     display: grid;
-    grid-template-columns: 150px 1fr auto;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: 1rem;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color); 
 }
 
 header img {
-    width: 120px;
-    height: 80px;
+    width: 60px;
+    height: auto;
 }
 
 header h1 {
+    font-family: 'Rye', cursive;
+    font-size: 2rem;
     text-align: center;
     margin: 0;
     justify-self: center;
@@ -149,26 +164,39 @@ nav ul {
 
 header nav {
     display: flex;
-    gap: 1rem;
+    gap: 15px;
 }
 
 header nav a {
     text-decoration: none;
     color: var(--primary-color);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3 ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  background-color: var(--primary-color); /* dark muted green bg on hover */
+  color: var(--accent2-color);             /* pale text on hover */
+  outline: none;
 }
 
 footer .socialmedia{
     display: flex;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 15px;
     margin: 8px 16px;
     align-items: center;
 }
 
 footer .socialmedia a img{
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     display: block;
+    filter: grayscale(20%) brightness(0.85);
+    transition: transform 0.2s ease;
 }
 
 .hero {
@@ -254,4 +282,36 @@ form button:hover {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+main section {
+  margin-bottom: 40px;  /* uniform spacing between major sections */
+  padding: 0 20px;
+}
+
+section figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto; /* centers image */
+  border: 3px solid var(--secondary-color); /* #7F9172 - subtle border for styling */
+}
+
+section figure {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: var(--accent2-color); /* #D5DFE5 - soft background */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-weight: bold;
+}
+
+footer .socialmedia a img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1); /* highlight on hover */
 }
