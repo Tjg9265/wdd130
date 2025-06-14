@@ -89,7 +89,7 @@ h1, h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     font-family: 'Rye', cursive;
     max-width: 80%;
     padding: 1rem 2rem;
@@ -209,12 +209,15 @@ footer .socialmedia a img{
     padding-bottom: 20px;
     text-align: center;
     color: var(--accent2-color);
+    height: 400px;
+    overflow: hidden;
 }
 
 .hero img {
     width: 100%;
     display: block;
     height: auto;
+    object-fit: cover;
 }
 
 /*Style for rafting images */
@@ -320,4 +323,14 @@ footer p {
 footer .socialmedia a img:hover {
   transform: scale(1.1);
   filter: grayscale(0%) brightness(1); /* highlight on hover */
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 68, 53, 0.4); /* derived from --accent1-color with transparency */
+    z-index: 1;
 }
