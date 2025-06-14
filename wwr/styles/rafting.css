@@ -209,18 +209,19 @@ footer .socialmedia a img{
     padding-bottom: 20px;
     text-align: center;
     color: var(--accent2-color);
-    height: 400px;
+    max-height: 500px;
     overflow: hidden;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .hero img {
     float: none;
     width: 100%;
     display: block;
-    height: auto;
+    max-height: 500px;
     object-fit: cover;
     margin: 0 auto;
 }
