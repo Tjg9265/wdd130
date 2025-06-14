@@ -88,14 +88,18 @@ h1, h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Rye', cursive;
+    max-width: 80%;
     padding: 1rem 2rem;
     border-radius: 8px;
     text-align: center;
     opacity: 0.85;
-    background-color: var(--accent1-color);
-    color: white;
+    background-color: rgba(125, 82, 60, 0.85);
+    color: var(--accent2-color);
     z-index: 2;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero article {
@@ -203,6 +207,8 @@ footer .socialmedia a img{
     position: relative;
     margin-bottom: 40px;
     padding-bottom: 20px;
+    text-align: center;
+    color: var(--accent2-color);
 }
 
 .hero img {
